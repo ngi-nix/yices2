@@ -34,6 +34,8 @@
           buildInputs = [ gmp gperf ];
           nativeBuildInputs = [ autoreconfHook ];
 
+          makeFlags = [ "LDCONFIG=true" ];
+
           meta = with lib; {
             description = "The Yices SMT Solver";
             longDescription = ''
